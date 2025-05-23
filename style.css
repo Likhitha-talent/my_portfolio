@@ -277,4 +277,27 @@
     display: block; /* or flex/block as you prefer */
   }
   
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.nav-menu ul{
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+  }
+  
+@media (min-width: 768px){
+    .nav-menu ul {
+      flex-direction: row; /* Horizontal on larger screens */
+    }
+  }
+
+  
+img{
+    max-width: 100%;
+    height: auto;
+  }
   
